@@ -12,6 +12,8 @@ Este proyecto es un catálogo de componentes reutilizables en React, que incluye
   - [Image](#images)
   - [Text](#texts)
   - [Toast](#toasts)
+  - [Carrousel](#carrousel)
+  - [Input](#inputs)
 - [Uso](#uso)
 
 
@@ -113,3 +115,6 @@ function App() {
 }
 ```
 
+## Uso
+
+Para usar cualquiera de los componentes, simplemente impórtalos en tu archivo y agrégales las propiedades necesarias según lo que necesites.
