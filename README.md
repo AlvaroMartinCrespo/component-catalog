@@ -59,3 +59,57 @@ import CustomButton from './CustomButton';
   size="medium" 
   onClick={() => alert('Button clicked!')} 
 />
+```
+
+### Modal
+
+Un modal que se puede abrir y cerrar con contenido personalizado.
+
+#### Props
+
+- **isOpen**: Booleano que determina si el modal está visible.
+- **onClose**: Función para cerrar el modal.
+- **title**: Título del modal (por defecto: "Modal Title").
+- **children**: Contenido que se mostrará dentro del modal.
+
+#### Ejemplo de Uso
+
+```jsx
+import React, { useState } from 'react';
+import Modal from './Modal';
+
+function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+  return (
+    <div>
+      <button onClick={openModal}>Open Modal</button>
+      <Modal isOpen={isModalOpen} onClose={closeModal} title="My Custom Modal">
+        <p>This is the content inside the modal!</p>
+      </Modal>
+    </div>
+  );
+}
+```
+
+### Contenedor Responsive
+
+Un contenedor flexible que se adapta a diferentes tamaños de pantalla.
+
+#### Ejemplo de Uso
+
+```jsx
+import Container from './ResponsiveContainer';
+
+function App() {
+  return (
+    <Container>
+      <p>Your content goes here!</p>
+    </Container>
+  );
+}
+```
+
