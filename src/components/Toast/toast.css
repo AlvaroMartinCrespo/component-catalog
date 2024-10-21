@@ -1,0 +1,28 @@
+.toast-container {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .toast-container.success {
+    background-color: #28a745; /* Verde para éxito */
+  }
+  
+  .toast-container.error {
+    background-color: #dc3545; /* Rojo para error */
+  }
+  
+  /* Animaciones para ocultar la toast */
+  .toast-container.hide {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  

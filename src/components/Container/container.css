@@ -1,0 +1,33 @@
+/* Estilos generales para el contenedor */
+.responsive-container {
+  display: block;
+  padding: 20px;
+  margin: 0 20px; /* Márgenes laterales */
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .responsive-container {
+    padding: 15px;
+    margin: 10px;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .responsive-container {
+    padding: 25px;
+    margin: 20px;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+  .responsive-container {
+    padding: 40px;
+    margin: 30px auto;
+  }
+}
