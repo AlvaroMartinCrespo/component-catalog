@@ -51,7 +51,7 @@ Un botón reutilizable con diferentes variantes y tamaños.
 #### Ejemplo de Uso
 
 ```jsx
-import CustomButton from './CustomButton';
+import CustomButton from './customButton';
 
 <CustomButton 
   label="Primary Button" 
@@ -76,7 +76,7 @@ Un modal que se puede abrir y cerrar con contenido personalizado.
 
 ```jsx
 import React, { useState } from 'react';
-import Modal from './Modal';
+import Modal from './modal';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -102,7 +102,7 @@ Un contenedor flexible que se adapta a diferentes tamaños de pantalla.
 #### Ejemplo de Uso
 
 ```jsx
-import Container from './ResponsiveContainer';
+import Container from './container';
 
 function App() {
   return (
