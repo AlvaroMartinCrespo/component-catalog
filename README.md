@@ -101,6 +101,10 @@ function App() {
 
 Un contenedor flexible que se adapta a diferentes tamaños de pantalla.
 
+#### Props
+
+- **children**: Contenido que se mostrará dentro del contenedor.
+
 #### Ejemplo de Uso
 
 ```jsx
@@ -115,9 +119,16 @@ function App() {
 }
 ```
 
-### Texto
+### Texts
 
 Un componente de texto simple y responsive para React que permite la personalización del tamaño, color, grosor de fuente y alineación.
+
+#### Props
+
+- **size**: Tamaño del texto (ejemplo: "1rem").
+- **color**: Color del texto (ejemplo: "darkblue").
+- **weight**: Grosor de la fuente (ejemplo: "bold").
+- **align**: Alineación del texto (ejemplo: "center").
 
 #### Ejemplo de Uso
 
@@ -134,6 +145,40 @@ function App() {
   );
 }
 ```
+
+### Inputs
+
+Un componente de entrada simple y responsive para React que permite la personalización del tipo, tamaño, color y estilos adicionales.
+
+#### Props
+
+- **type**: Especifica el tipo de entrada (ejemplo: "text", "email", "password").
+- **placeholder**: Texto que se muestra cuando el campo está vacío.
+- **size**: Tamaño del input (ejemplo: "small", "medium", "large").
+- **color**: Color del borde del input.
+- **borderStyle**: Estilo del borde (ejemplo: "rounded" o "square").
+
+#### Ejemplo de Uso
+
+```jsx
+import Input from './Input';
+
+function App() {
+  return (
+    <div>
+      <Input 
+        type="text" 
+        placeholder="Escribe aquí..." 
+        size="medium" 
+        color="blue" 
+        borderStyle="rounded" 
+      />
+    </div>
+  );
+}
+
+```
+
 
 ## Uso
 
