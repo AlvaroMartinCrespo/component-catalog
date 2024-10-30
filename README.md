@@ -115,6 +115,26 @@ function App() {
 }
 ```
 
+### Texto
+
+Un componente de texto simple y responsive para React que permite la personalización del tamaño, color, grosor de fuente y alineación.
+
+#### Ejemplo de Uso
+
+```jsx
+import Text from './Text';
+
+function App() {
+  return (
+    <div>
+      <Text size="1rem" color="darkblue" weight="bold" align="center">
+        Texto responsive que se adapta al tamaño de pantalla.
+      </Text>
+    </div>
+  );
+}
+```
+
 ## Uso
 
 Para usar cualquiera de los componentes, simplemente impórtalos en tu archivo y agrégales las propiedades necesarias según lo que necesites.

@@ -1,7 +1,12 @@
 import React from 'react';
+import './Text.css';
 
-const Text = ({children}) =>{
+const Text = ({ children, size = '1rem', color = 'black', weight = 'normal', align = 'left' }) => {
+  return (
+    <p className="text" style={{ fontSize: size, color: color, fontWeight: weight, textAlign: align }}>
+      {children}
+    </p>
+  );
+};
 
-    return <></>
-
-}
+export default Text;
