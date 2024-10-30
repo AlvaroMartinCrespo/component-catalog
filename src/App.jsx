@@ -55,7 +55,7 @@ function App() {
 
           {/* Modal */}
 
-          {/* <Container>
+          <Container>
             <div className="containerButtons">
 
               <CustomButton onClick={()=>setIsOpenModal(true)}>Open Modal</CustomButton>
@@ -69,12 +69,12 @@ function App() {
             <Container>
               <p>Modal Content</p>
             </Container>
-          </Modal> */}
+          </Modal>
 
             {/* Text */}
 
             <Container>
-              <Text size="2rem" color="red" weight="bold" align="center">Hello World</Text>
+              <Text size="2rem" color="red" weight="bold" align="left">Hello World</Text>
             </Container>
 
             {/* Input */}

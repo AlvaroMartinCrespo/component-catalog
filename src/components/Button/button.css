@@ -1,69 +1,74 @@
 /* Estilos básicos del botón */
 .custom-button {
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Tamaños del botón */
-  .custom-button.small {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-  
-  .custom-button.medium {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-  
-  .custom-button.large {
-    padding: 12px 24px;
-    font-size: 18px;
-  }
-  
-  /* Variantes del botón */
-  .custom-button.primary {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .custom-button.primary:hover {
-    background-color: #0056b3;
-  }
-  
-  .custom-button.secondary {
-    background-color: #6c757d;
-    color: white;
-  }
-  
-  .custom-button.secondary:hover {
-    background-color: #5a6268;
-  }
-  
-  .custom-button.success {
-    background-color: #28a745;
-    color: white;
-  }
-  
-  .custom-button.success:hover {
-    background-color: #218838;
-  }
-  
-  .custom-button.error {
-    background-color: #dc3545;
-    color: white;
-  }
-  
-  .custom-button.error:hover {
-    background-color: #c82333;
-  }
-  
-  /* Efecto de sombra */
-  .custom-button:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Tamaños del botón */
+.custom-button.small {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.custom-button.medium {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.custom-button.large {
+  padding: 14px 28px;
+  font-size: 18px;
+}
+
+/* Variantes del botón con degradado moderno */
+.custom-button.primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+}
+
+.custom-button.primary:hover {
+  background: linear-gradient(135deg, #0056b3, #003b7f);
+}
+
+.custom-button.secondary {
+  background: linear-gradient(135deg, #6c757d, #5a6268);
+  color: white;
+}
+
+.custom-button.secondary:hover {
+  background: linear-gradient(135deg, #5a6268, #444e53);
+}
+
+.custom-button.success {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+}
+
+.custom-button.success:hover {
+  background: linear-gradient(135deg, #218838, #1a6b2d);
+}
+
+.custom-button.error {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: white;
+}
+
+.custom-button.error:hover {
+  background: linear-gradient(135deg, #c82333, #a71e2b);
+}
+
+/* Efecto de elevación y transformación */
+
+.custom-button:active {
+  transform: translateY(4px); /* Sensación de presión */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}

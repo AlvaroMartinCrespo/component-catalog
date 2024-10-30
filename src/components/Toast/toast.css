@@ -1,28 +1,52 @@
+/* Contenedor de la toast con animación de entrada */
 .toast-container {
-    padding: 12px;
-    margin: 10px;
-    border-radius: 8px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: white;
-    display: inline-block;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    opacity: 1;
-    transform: translateY(0);
+  padding: 14px 20px;
+  margin: 12px;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: white;
+  display: inline-block;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 1;
+  transform: translateY(0);
+  max-width: 90%;
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
   }
-  
-  .toast-container.success {
-    background-color: #28a745; /* Verde para éxito */
+  to {
+      opacity: 1;
+      transform: translateY(0);
   }
-  
-  .toast-container.error {
-    background-color: #dc3545; /* Rojo para error */
+}
+
+/* Estilo de toast de éxito con degradado */
+.toast-container.success {
+  background: linear-gradient(135deg, #28a745, #218838);
+}
+
+/* Estilo de toast de error con degradado */
+.toast-container.error {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+}
+
+/* Efecto de desvanecimiento para ocultar la toast */
+.toast-container.hide {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Responsive: ajustar el tamaño de fuente en pantallas pequeñas */
+@media (max-width: 480px) {
+  .toast-container {
+      font-size: 14px;
+      padding: 12px 16px;
   }
-  
-  /* Animaciones para ocultar la toast */
-  .toast-container.hide {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  
+}
