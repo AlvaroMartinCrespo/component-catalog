@@ -1,5 +1,5 @@
 import React from 'react';
-import './Text.css';
+import './text.css';
 
 const Text = ({ children, size = '1rem', color = 'black', weight = 'normal', align = 'left' }) => {
   return (

@@ -3,6 +3,8 @@ import Container from "./components/Container/container"
 import Toast from "./components/Toast/toast"
 import CustomButton from "./components/Button/button"
 import Modal from "./components/Modal/modal"
+import Text from "./components/Text/text"
+import Input from "./components/Input/input"
 import { useState } from "react"
 import './App.css'
 
@@ -69,6 +71,16 @@ function App() {
             </Container>
           </Modal> */}
 
+            {/* Text */}
+
+            <Container>
+              <Text size="2rem" color="red" weight="bold" align="center">Hello World</Text>
+            </Container>
+
+            {/* Input */}
+            <Container>
+              <Input placeholder="Enter your name" type="text" />
+            </Container>
 
       </TestComponent>
     </>
