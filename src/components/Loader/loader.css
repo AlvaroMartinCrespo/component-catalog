@@ -1,0 +1,55 @@
+/* Estilos generales del loader */
+.loader {
+    border: 4px solid transparent;
+    border-radius: 50%;
+    border-top-color: #007bff; /* Color de la parte superior */
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Tamaños del loader */
+  .loader.small {
+    width: 24px;
+    height: 24px;
+    border-width: 3px;
+  }
+  
+  .loader.medium {
+    width: 48px;
+    height: 48px;
+    border-width: 4px;
+  }
+  
+  .loader.large {
+    width: 72px;
+    height: 72px;
+    border-width: 5px;
+  }
+  
+  /* Animación de giro */
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Responsividad: ajusta el tamaño en pantallas pequeñas */
+  @media (max-width: 480px) {
+    .loader.small {
+      width: 20px;
+      height: 20px;
+      border-width: 2px;
+    }
+  
+    .loader.medium {
+      width: 36px;
+      height: 36px;
+      border-width: 3px;
+    }
+  
+    .loader.large {
+      width: 60px;
+      height: 60px;
+      border-width: 4px;
+    }
+  }
+  

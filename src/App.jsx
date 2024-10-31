@@ -6,6 +6,7 @@ import Modal from "./components/Modal/modal"
 import Text from "./components/Text/text"
 import Input from "./components/Input/input"
 import Card from "./components/Card/card"
+import Loader from "./components/Loader/loader"
 import { useState } from "react"
 import './App.css'
 
@@ -14,6 +15,7 @@ function App() {
   const [toastVisibleSuccess, setToastVisibleSuccess] = useState(false)
   const [toastVisibleError, setToastVisibleError] = useState(false)
   const [isOpenModal, setIsOpenModal] = useState(false)
+  const [isLoaderVisible, setIsLoaderVisible] = useState(false)
 
   return (
     <>
@@ -119,6 +121,30 @@ function App() {
               />
               </section>
               
+            </Container>
+
+            {/* Loader */}
+            <Container> 
+
+              {isLoaderVisible 
+              
+              ? <>
+              
+                <CustomButton onClick={()=>setIsLoaderVisible(false)} label="Hide loader" />
+                  <Container >
+                    <Loader size="medium" color="#007bff"/>
+                  </Container>
+                
+              
+              </> 
+              
+              : <>
+              
+                <CustomButton onClick={()=>setIsLoaderVisible(true)} label="Show loader" />
+              
+              </>}
+
+
             </Container>
 
       </TestComponent>
