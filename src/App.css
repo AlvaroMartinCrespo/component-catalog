@@ -3,3 +3,19 @@
   gap: 10px;
   justify-content: center;
 }
+
+.flex{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.center{
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .flex{
+    flex-direction: column;
+  }
+}

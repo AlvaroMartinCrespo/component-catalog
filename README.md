@@ -178,6 +178,44 @@ function App() {
 
 ```
 
+### Cards
+
+Este componente Card ofrece un diseño limpio y moderno que es responsive y puede adaptarse a diferentes estilos.
+
+#### Props
+
+- **Image**: URL de la imagen que se mostrará en la parte superior de la card (opcional).
+- **title**: Título de la card.
+- **description**: Descripción o texto adicional de la card.
+- **actions**: Elementos adicionales (botones o enlaces) para mostrar en la parte inferior de la card (opcional).
+
+#### Ejemplo de Uso
+
+```jsx
+import Card from './Card';
+
+function App() {
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
+      <Card
+        image="https://via.placeholder.com/300x180"
+        title="Título de la Card"
+        description="Esta es una descripción de ejemplo para la Card. Puedes agregar cualquier texto aquí."
+        actions={
+          <>
+            <button>Acción 1</button>
+            <button>Acción 2</button>
+          </>
+        }
+      />
+    </div>
+  );
+}
+
+export default App;
+
+
+```
 
 ## Uso
 

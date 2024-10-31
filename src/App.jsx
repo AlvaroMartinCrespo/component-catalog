@@ -5,6 +5,7 @@ import CustomButton from "./components/Button/button"
 import Modal from "./components/Modal/modal"
 import Text from "./components/Text/text"
 import Input from "./components/Input/input"
+import Card from "./components/Card/card"
 import { useState } from "react"
 import './App.css'
 
@@ -34,6 +35,7 @@ function App() {
               <Toast 
                 message="This is a success toast"
                 type="success"
+                position="top-right"
                 duration={3000}
                 onClose={()=>setToastVisibleSuccess(false)}
               />
@@ -89,7 +91,34 @@ function App() {
 
             {/* Input */}
             <Container>
-              <Input placeholder="Texto" type="text" />
+              <Text
+                size="20px"
+                color="black"
+                weight="bold"
+                align="left"
+              >Introduce aqui tu nombre:</Text>
+              <Input placeholder="Nombre" type="text" onChange={()=>{console.log('Estas escribiendo')}}/>
+            </Container>
+
+            {/* Card */}
+            <Container>
+              <section className="flex">
+              <Card 
+                title="Con imagen" 
+                description="Card Description Card Description Card Description Card Description Card Description " 
+                image="src\assets\img\example.jpg" 
+              />
+              <Card 
+                title="Sin imagen" 
+                description="Card Description Card Description Card Description Card Description Card Description " 
+                actions={<section className="flex center">
+                  <CustomButton size="small" label="Action 1"/>
+                  <CustomButton size="small" label="Action 2"/>
+                </section>}
+                 
+              />
+              </section>
+              
             </Container>
 
       </TestComponent>
