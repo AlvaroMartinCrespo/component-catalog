@@ -8,6 +8,7 @@ import Input from "./components/Input/input"
 import Card from "./components/Card/card"
 import Loader from "./components/Loader/loader"
 import Accordion from "./components/Accordion/accordion"
+import Image from "./components/Image/image"
 import Gallery from "./components/Gallery/gallery"
 import { useState } from "react"
 import './App.css'
@@ -166,6 +167,14 @@ function App() {
             {/* Galery */}
             <Container>
               <Gallery images={imagenes}/>
+            </Container>
+
+            {/* Image */}
+            <Container >
+              <section className="flex center">
+                <Image width="50%" className="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTd00LthTsvFQAEL2jlWb2aubmv6DdBbN_g&s" alt="Imagen de prueba"/>
+                <Image width="50%" borderRadius="0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTd00LthTsvFQAEL2jlWb2aubmv6DdBbN_g&s" alt="Imagen de prueba"/>
+              </section>
             </Container>
 
             

@@ -1,0 +1,18 @@
+/* Image.css */
+
+.custom-image {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    object-fit: var(--object-fit, cover); /* Por defecto, cover */
+    border-radius: inherit;
+  }
+  
+  /* Ajustes responsive opcionales */
+  @media (max-width: 768px) {
+    .custom-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

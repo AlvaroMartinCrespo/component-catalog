@@ -279,29 +279,42 @@ function App() {
 
 ### Image
 
-Permite visualizar a forma de galeria las imagenes insertadas
-
 #### Props
 
-- **images**: Permite pasar un array de URLs al componente Gallery, asegurando que puedas elegir qué imágenes mostrar.
+- **src**: La URL de la imagen.
+- **alt**: Texto alternativo con un valor predeterminado.
+- **width height**: Dimensiones personalizables para adaptar la imagen
+- **borderRadius**: Curvatura de las esquinas de la imagen
+- **objectFit**: Permite definir el ajuste de la imagen (cover, contain, fill, none, scale-down).
 
 #### Ejemplo de Uso
 
 ```jsx
-import Accordion from './Accordion';
+import Image from './Image';
 
 function App() {
   return (
     <div>
-      <Accordion title="Detalles del Producto" color="#007bff">
-        <p>Este es el contenido adicional que se despliega al hacer clic.</p>
-      </Accordion>
-      <Accordion title="Preguntas Frecuentes" color="#28a745" isOpen>
-        <p>Puedes cerrar o abrir el accordeon haciendo clic en el encabezado.</p>
-      </Accordion>
+      <Image 
+        src="src/assets/img/example1.jpg" 
+        alt="Ejemplo 1" 
+        width="300px" 
+        height="200px" 
+        borderRadius="10px" 
+        objectFit="cover"
+      />
+      <Image 
+        src="src/assets/img/example2.jpg" 
+        alt="Ejemplo 2" 
+        width="100%" 
+        height="250px" 
+        objectFit="contain"
+      />
     </div>
   );
 }
+
+export default App;
 
 ```
 
