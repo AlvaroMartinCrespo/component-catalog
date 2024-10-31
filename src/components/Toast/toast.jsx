@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Toast.css'; // Importa la hoja de estilos
 
-const Toast = ({ message, type = 'success', duration = 3000, onClose }) => {
+const Toast = ({ message, type = 'success', duration = 3000, onClose, position='top-right' }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Toast = ({ message, type = 'success', duration = 3000, onClose }) => {
   if (!isVisible) return null;
 
   return (
-    <div className={`toast-container ${type}`}>
+    <div className={`toast-container ${type} ${position}`}>
       <p>{message}</p>
     </div>
   );
