@@ -8,6 +8,7 @@ import Input from "./components/Input/input"
 import Card from "./components/Card/card"
 import Loader from "./components/Loader/loader"
 import Accordion from "./components/Accordion/accordion"
+import Gallery from "./components/Gallery/gallery"
 import { useState } from "react"
 import './App.css'
 
@@ -18,6 +19,12 @@ function App() {
   const [isOpenModal, setIsOpenModal] = useState(false)
   const [isLoaderVisible, setIsLoaderVisible] = useState(false)
   const [isAccordionVisible, setIsAccordionVisible] = useState(false)
+
+  const imagenes = [
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTd00LthTsvFQAEL2jlWb2aubmv6DdBbN_g&s',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-I6HHEOwYgL5v4GoL17cJgKDfnOqzD3uvqQ&s',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPnXHt7v15IR3VVABxAGLwkSjYrP59owqlsw&s'
+  ]
 
   return (
     <>
@@ -154,6 +161,11 @@ function App() {
                 <Accordion title="Detalles Importantes" color="#D63D1E">
                   <p>Este acordeón está abierto por defecto. Puedes cerrar o abrir haciendo clic en el encabezado.</p>
                 </Accordion>
+            </Container>
+
+            {/* Galery */}
+            <Container>
+              <Gallery images={imagenes}/>
             </Container>
 
             

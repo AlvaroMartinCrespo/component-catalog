@@ -12,6 +12,7 @@ Este proyecto es un catálogo de componentes reutilizables en React, que incluye
   - [Image](#images)
   - [Text](#texts)
   - [Toast](#toasts)
+  - [Accordion](#Accordion)
   - [Loader](#loader)
   - [Carrousel](#carrousel)
   - [Input](#inputs)
@@ -243,6 +244,65 @@ function App() {
 }
 
 export default App
+```
+
+### Accordion
+
+Este Accordion permite personalizar el color del encabezado y el borde, haciéndolo más adaptable a diferentes esquemas de color en la interfaz.
+
+#### Props
+
+- **title**: El título del encabezado del acordeón
+- **children**: Contenido del acordeón que se muestra al expandirse
+- **isOpen**: Determina si el acordeón está expandido al montarse
+- **color**: El color principal para el encabezado y el borde
+
+#### Ejemplo de Uso
+
+```jsx
+import Accordion from './Accordion';
+
+function App() {
+  return (
+    <div>
+      <Accordion title="Detalles del Producto" color="#007bff">
+        <p>Este es el contenido adicional que se despliega al hacer clic.</p>
+      </Accordion>
+      <Accordion title="Preguntas Frecuentes" color="#28a745" isOpen>
+        <p>Este acordeón está abierto por defecto. Puedes cerrarlo o abrirlo haciendo clic en el encabezado.</p>
+      </Accordion>
+    </div>
+  );
+}
+
+```
+
+### Image
+
+Permite visualizar a forma de galeria las imagenes insertadas
+
+#### Props
+
+- **images**: Permite pasar un array de URLs al componente Gallery, asegurando que puedas elegir qué imágenes mostrar.
+
+#### Ejemplo de Uso
+
+```jsx
+import Accordion from './Accordion';
+
+function App() {
+  return (
+    <div>
+      <Accordion title="Detalles del Producto" color="#007bff">
+        <p>Este es el contenido adicional que se despliega al hacer clic.</p>
+      </Accordion>
+      <Accordion title="Preguntas Frecuentes" color="#28a745" isOpen>
+        <p>Puedes cerrar o abrir el accordeon haciendo clic en el encabezado.</p>
+      </Accordion>
+    </div>
+  );
+}
+
 ```
 
 ## Uso
