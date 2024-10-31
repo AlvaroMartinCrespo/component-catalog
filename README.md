@@ -12,6 +12,7 @@ Este proyecto es un catálogo de componentes reutilizables en React, que incluye
   - [Image](#images)
   - [Text](#texts)
   - [Toast](#toasts)
+  - [Loader](#loader)
   - [Carrousel](#carrousel)
   - [Input](#inputs)
 - [Uso](#uso)
@@ -215,6 +216,33 @@ function App() {
 export default App;
 
 
+```
+
+### Loader
+
+Este Loader es flexible y adaptable a pantallas pequeñas, y sus colores y tamaños se pueden personalizar fácilmente para distintos escenarios en la interfaz de usuario.
+
+#### Props
+
+- **size**: Controla el tamaño del loader.
+- **color**: Define el color de la parte visible del loader.
+
+#### Ejemplo de Uso
+
+```jsx
+import Loader from './Loader';
+
+function App() {
+  return (
+    <div>
+      <Loader size="large" color="#28a745" /> {/* Loader verde, tamaño grande */}
+      <Loader size="medium" color="#dc3545" /> {/* Loader rojo, tamaño mediano */}
+      <Loader size="small" color="#ffc107" /> {/* Loader amarillo, tamaño pequeño */}
+    </div>
+  );
+}
+
+export default App
 ```
 
 ## Uso
