@@ -7,6 +7,7 @@ import Text from "./components/Text/text"
 import Input from "./components/Input/input"
 import Card from "./components/Card/card"
 import Loader from "./components/Loader/loader"
+import Accordion from "./components/Accordion/accordion"
 import { useState } from "react"
 import './App.css'
 
@@ -16,6 +17,7 @@ function App() {
   const [toastVisibleError, setToastVisibleError] = useState(false)
   const [isOpenModal, setIsOpenModal] = useState(false)
   const [isLoaderVisible, setIsLoaderVisible] = useState(false)
+  const [isAccordionVisible, setIsAccordionVisible] = useState(false)
 
   return (
     <>
@@ -147,6 +149,14 @@ function App() {
 
             </Container>
 
+            {/* Accordion */}
+            <Container>
+                <Accordion title="Detalles Importantes" color="#D63D1E">
+                  <p>Este acordeón está abierto por defecto. Puedes cerrar o abrir haciendo clic en el encabezado.</p>
+                </Accordion>
+            </Container>
+
+            
       </TestComponent>
     </>
   )
