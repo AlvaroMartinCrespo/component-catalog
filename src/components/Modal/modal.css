@@ -115,8 +115,9 @@
 /* Responsive: ajusta la modal en pantallas pequeñas */
 @media (max-width: 480px) {
   .modal-content {
-      width: 95%;
+      width: 90%;
       padding: 20px;
+      margin: 0 10px; /* Centra la modal y asegura espacio en los bordes */
   }
 
   .modal-header h2 {

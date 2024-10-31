@@ -154,9 +154,8 @@ Un componente de entrada simple y responsive para React que permite la personali
 
 - **type**: Especifica el tipo de entrada (ejemplo: "text", "email", "password").
 - **placeholder**: Texto que se muestra cuando el campo está vacío.
-- **size**: Tamaño del input (ejemplo: "small", "medium", "large").
 - **color**: Color del borde del input.
-- **borderStyle**: Estilo del borde (ejemplo: "rounded" o "square").
+- **Value**: Texto ya definido.
 
 #### Ejemplo de Uso
 

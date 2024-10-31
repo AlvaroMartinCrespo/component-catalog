@@ -67,19 +67,29 @@ function App() {
 
           <Modal isOpen={isOpenModal} onClose={()=>setIsOpenModal(false)} title="Modal Title">
             <Container>
-              <p>Modal Content</p>
+              <h1>Este es un titulo en la modal</h1>
+              <p>Este es el contendido de la modal</p>
+              <p>Este es el contendido de la modal</p>
+              <p>Este es el contendido de la modal</p>
+              <ul>
+                <li>Hola</li>
+                <li>Hola</li>
+                <li>Hola</li>
+                <li>Hola</li>
+                <li>Hola</li>
+              </ul>
             </Container>
           </Modal>
 
             {/* Text */}
 
             <Container>
-              <Text size="2rem" color="red" weight="bold" align="left">Hello World</Text>
+              <Text size="2rem" color="red" weight="bold" align="center">Hello World</Text>
             </Container>
 
             {/* Input */}
             <Container>
-              <Input placeholder="Enter your name" type="text" />
+              <Input placeholder="Texto" type="text" />
             </Container>
 
       </TestComponent>
